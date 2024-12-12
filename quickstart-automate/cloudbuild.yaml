@@ -13,6 +13,8 @@
 # limitations under the License.
 
 # [START cloudbuild_quickstart_automate]
+options:
+  logging: CLOUD_LOGGING_ONLY
 steps:
   - name: golang
     args: ['go', 'run', 'quickstart-automate/main.go']
